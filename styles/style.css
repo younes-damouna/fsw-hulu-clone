@@ -1,0 +1,67 @@
+/* normalize CSS */
+@import url(https://db.onlinewebfonts.com/c/105007d99d9df64c50cc24d696d79555?family=Graphik+Web+Regular+Regular);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: "Graphik Web Regular Regular";
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.container{
+    width: 100%;
+    height: 88vh;
+    background-image: url(/assets/header-bg.png);
+    background-repeat: no-repeat;
+    object-fit: fill;
+    position: relative;
+    /* background-position: center center; */
+    background-size: cover;
+    background-position-x: right ;
+    background-position-y: center;
+
+}
+/* .overlay{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background-color: #00000011;
+z-index: 0;
+} */
+
+.navbar{
+    height: 74px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+.logo{
+    width: 30px;
+}
+.log-in-btn{
+
+}
+
+.log-in-btn a{
+color: #a2a9b6;
+font-weight: 900;
+text-decoration: none;
+padding: 10px 16px;
+border-radius: 8px;
+transition: all 300ms ease-in-out;
+
+}
+.log-in-btn a:hover{
+    background-color: #323843;
+    border-radius: 8px;
+    color: white;
+}
