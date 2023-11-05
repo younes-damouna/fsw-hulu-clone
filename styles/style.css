@@ -1,34 +1,5 @@
 /* normalize CSS */
-@font-face {
-  font-family: Graphik;
-  src: url(../assets/fonts/Graphik-Extralight-Web.woff) format("woff");
-  font-weight: 100;
-}
-@font-face {
-  font-family: Graphik;
-  src: url(../assets/fonts/Graphik-Regular-Web.woff) format("woff");
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: Graphik;
 
-  src: url(../assets/fonts/Graphik-Medium-Web.woff) format("woff");
-  font-weight: 600;
-  font-display: swap;
-}
-@font-face {
-  font-family: Graphik;
-  src: url(../assets/fonts/Graphik-Semibold-Web.woff) format("woff");
-  font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: Graphik;
-  src: url(../assets/fonts/Graphik-Bold-Web.woff) format("woff");
-  font-weight: 800;
-  font-display: swap;
-}
 @font-face {
   font-family: Graphik Web;
   src: url(../assets/fonts/Graphik-Regular-Web.woff) format("woff");
@@ -55,14 +26,12 @@
   margin: 0;
   box-sizing: border-box;
   /* font-size: 100%; */
-
 }
 a {
   text-decoration: none;
   color: #040405;
 }
 body {
-  /* font-family: "Graphik Web Regular Regular"; */
   font-family: "Graphik Web";
 }
 img {
@@ -82,15 +51,16 @@ img {
   background-position-x: right;
   background-position-y: center;
 }
-/* .overlay{
-    position: absolute;
-    width: 100%;
-    height: 90vh;
-    background-color: #00000011;
-z-index: 0;
-} */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 88vh;
+  background-color: #00000011;
+  z-index: 0;
+}
 
 .navbar {
+  position: relative;
   height: 74px;
   width: 100%;
   display: flex;
@@ -98,6 +68,7 @@ z-index: 0;
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+  z-index: 1;
 }
 .logo {
   width: 30px;
@@ -126,6 +97,8 @@ z-index: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .green-text {
@@ -138,15 +111,14 @@ z-index: 0;
   color: white;
   width: 45%;
   height: 40vh;
-  /* margin-top: 20px; */
-  /* border: 1px solid white; */
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .hero-item {
   width: 50%;
-  /* height: 50%; */
+
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -170,12 +142,10 @@ z-index: 0;
   height: 60px;
 }
 .logo {
-  /* height: 100%; */
   height: 74px;
   width: 61px;
 }
 .logo img {
-  /* object-fit: cover; */
   width: 100%;
   height: 100%;
 }
@@ -213,7 +183,6 @@ z-index: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin: 20px; */
 }
 .hero-terms,
 .hero-sign-up {
@@ -268,7 +237,6 @@ z-index: 0;
 
   color: #040405;
   border-color: #a5b8b0;
-  /* transition: none; */
 }
 
 .tv-section {
@@ -306,18 +274,16 @@ z-index: 0;
   line-height: 1.36;
   text-align: center;
   font-weight: 400;
-    margin-bottom: 50px;
-
+  margin-bottom: 50px;
 }
 .cards-container {
-    width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .cards {
-    
   width: 90%;
   display: flex;
   flex-wrap: wrap;
@@ -331,10 +297,7 @@ z-index: 0;
 .card-item {
   width: 295px;
   flex-grow: 1;
-  /* flex: auto; */
-  /* flex-grow: 1/3; */
-  /* flex-shrink: 1; */
-  /* width: 100%; */
+
   height: 100%;
   border: 4px solid rgba(100, 53, 53, 0);
   border-radius: 10px;
@@ -363,14 +326,14 @@ z-index: 0;
   font-size: 12px;
   line-height: 1.44;
 
-    font-weight: 500;
+  font-weight: 500;
 }
-.card-sub-title{
-    font-size: 20px;
-    line-height: 28px;
-    margin: 0;
-    padding-top: 8px;
-    padding-bottom: 8px;
+.card-sub-title {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .card-overlay {
   position: absolute;
@@ -383,16 +346,15 @@ z-index: 0;
   z-index: 99;
   border-radius: 10px;
   background: -webkit-linear-gradient(
-    293.18deg,
-    rgba(0, 0, 0, 0.5) 4.58%,
-    transparent 69.61%
-  ),
-  -webkit-linear-gradient(65.5deg, rgba(0, 0, 0, 0.5) 4.71%, transparent
-        71.49%);
+      293.18deg,
+      rgba(0, 0, 0, 0.5) 4.58%,
+      transparent 69.61%
+    ),
+    -webkit-linear-gradient(65.5deg, rgba(0, 0, 0, 0.5) 4.71%, transparent
+          71.49%);
   transition: all 300ms ease-in-out;
 }
 .card-item-image:hover .card-overlay {
-  /* background-color: #1515ab4d; */
   background: -webkit-linear-gradient(
       293.18deg,
       rgba(0, 0, 0, 0.9) 4.58%,
@@ -400,167 +362,419 @@ z-index: 0;
     ),
     -webkit-linear-gradient(65.5deg, rgba(0, 0, 0, 0.4) 4.71%, transparent
           71.49%);
-  /* border: 10px solid white; */
 }
 
 .card-item:hover {
   border: 4px solid #797d84;
   border-radius: 15px;
-
 }
 
-.add-on{
-    position:absolute;
-    /* bottom: -10px; */
-    margin-top: 10px;
-    font-family: "Graphik Web",sans-serif;
-    font-size: 10px;
-    line-height: 1.46;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: #ffffff99
-    ;
-
+.add-on {
+  position: absolute;
+  /* bottom: -10px; */
+  margin-top: 10px;
+  font-family: "Graphik Web", sans-serif;
+  font-size: 10px;
+  line-height: 1.46;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #ffffff99;
 }
 
-
-.hulu-ads{
-    font-size: 10px;
-    font-weight: 400;
-        margin: 0 25%;
-        color: #ffffff99;
-        text-align: center;
-        
-
+.hulu-ads {
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0 25%;
+  color: #ffffff99;
+  text-align: center;
 }
-.hulu-ads span a{
-    text-decoration: underline;
-    color: #ffffff99;
+.hulu-ads span a {
+  text-decoration: underline;
+  color: #ffffff99;
 }
-.view-channels{
-    margin-top: 16px;
-
+.view-channels {
+  margin-top: 16px;
 }
-.view-channels a{
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: .6px;
-    text-decoration: underline;
-    color: white;
-
+.view-channels a {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-decoration: underline;
+  color: white;
 }
-.get-hulu-btn{
-    background-color: #00ed82;
-    padding: 16px 50px;
-    font-weight: 600;
-    border-radius: 5px;
-    /* background-color: transparent; */
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: all 300ms ease-in-out;
+.get-hulu-btn {
+  background-color: #00ed82;
+  padding: 16px 50px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 300ms ease-in-out;
 }
-.get-hulu-btn:hover{
-    background-color: #1ce78390;
+.get-hulu-btn:hover {
+  background-color: #1ce78390;
 }
-.margin-smaller{
-    margin-bottom: 30px !important;
-    /* border: 2px solid white; */
+.margin-smaller {
+  margin-bottom: 30px !important;
 }
-
 
 /* Live Sports Container */
-.container-live-sports{
-    width: 100%;
-    height: 110vh;
-    background-image:linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%),
-     url(/assets/second-section-bg.png);
-    background-repeat: no-repeat;
-    object-fit: fill;
-    position: relative;
-    /* background-position: center center; */
-    background-size: cover;
-    background-position-x: right;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-live-sports {
+  width: 100%;
+  height: 110vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) -57.5%,
+      rgba(0, 0, 0, 0) 98.72%
+    ),
+    url(/assets/second-section-bg.png);
+  background-repeat: no-repeat;
+  object-fit: fill;
+  position: relative;
+  background-size: cover;
+  background-position-x: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.live-sports-wrapper{
-    width: 70%;
-    height: 55vh;
-    /* border: 1px solid White; */
-    padding: 50px;
-    padding-top: 20px;
-}
-
-.sports-menu ul{
-    display: flex;
-    /* gap: 25px; */
-
-}
-.sports-menu ul li{
-    list-style: none;
-    margin-right: 30px;
-    padding-bottom: 15px;
-    color:  hsl(0deg 0% 100% / 40%);
-
-    line-height: 1.125;
-    font-size: 12px;
-    font-weight: 500;
-    /* font-size: 100%; */
-   
-    letter-spacing: 0.25px;
-    cursor: pointer ;
-    transition: all 300ms ease-in-out;
-}
-.sports-menu ul li:hover{
-    color: #ffffff99;
-
-}
-.tab-active{
-    border-bottom: 4px solid white;
-    color: white !important;
-
-}
-.tab-active:hover{
-    color: #ffffff99 !important;
-
+.live-sports-wrapper {
+  width: 70%;
+  height: 55vh;
+  /* border: 1px solid White; */
+  padding: 50px;
+  padding-top: 20px;
 }
 
-.sports-title,.sports-description{
-color: white;
-width: 50%;
+.sports-menu ul {
+  display: flex;
+  /* gap: 25px; */
 }
-.sports-title{
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 1.25;
-    letter-spacing: -0.5px;
-    margin-top: 25px;
+.sports-menu ul li {
+  list-style: none;
+  margin-right: 30px;
+  padding-bottom: 15px;
+  color: hsl(0deg 0% 100% / 40%);
+
+  line-height: 1.125;
+  font-size: 12px;
+  font-weight: 500;
+
+  letter-spacing: 0.25px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
-.sports-description{
-    font-size: 16px;
-    line-height: 1.36;
-    letter-spacing: 0;
-    font-weight: 400px;
-    margin-top: 18px;
+.sports-menu ul li:hover {
+  color: #ffffff99;
+}
+.tab-active {
+  border-bottom: 4px solid white;
+  color: white !important;
+}
+.tab-active:hover {
+  color: #ffffff99 !important;
 }
 
-.partners-logos{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    display: flex;
-   
+.sports-title,
+.sports-description {
+  color: white;
+  width: 50%;
 }
-.partner-logo{
-    width: 55px;
-    height: 55px;
-    background-color: white;
-    border-radius: 50%;
-    margin-right: 30px;
-    /* border: none; */
+.sports-title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  margin-top: 25px;
 }
-.live-sports-wrapper .hulu-ads{
-    text-align: start;
-   
-    margin: 0;
+.sports-description {
+  font-size: 16px;
+  line-height: 1.36;
+  letter-spacing: 0;
+  font-weight: 400px;
+  margin-top: 18px;
+}
+
+.partners-logos {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.partner-logo {
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 30px;
+  /* border: none; */
+}
+.live-sports-wrapper .hulu-ads {
+  text-align: start;
+
+  margin: 0;
+}
+
+.plan-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #0b0c0f;
+}
+
+.plan-title {
+  font-family: "Graphik Web", sans-serif;
+  font-size: 48px;
+  letter-spacing: -0.5px;
+
+  font-weight: 600;
+  line-height: 1.25;
+  color: white;
+  margin: 16px 0 10px;
+}
+
+.plan-description {
+  /* font-size: 18px; */
+  color: #f0f8ff;
+  width: 54%;
+  line-height: 1.36;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.horizontal-line {
+  width: 80% !important;
+}
+
+.plans-table {
+  width: 80%;
+}
+
+.plans-table table {
+  width: 100%;
+  border-collapse: collapse;
+  align-items: center;
+  /* border: 3px solid red; */
+}
+
+.plans-table table tr td,
+.plans-table table tr th {
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  align-content: center;
+  align-self: center;
+  margin: auto 0;
+  /* border: 1px solid white; */
+  position: relative;
+}
+
+.plans-table table tr td div {
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.no-border-top {
+  border-top: none !important;
+}
+
+.plans-table > table > thead > tr,
+.plans-table > table > tfoot > tr,
+.plans-table > table > tbody > tr {
+  border-top: 1px solid lightgray;
+}
+
+.plans-table > table > tfoot > tr td {
+  width: 100% !important;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-table > table > tfoot > tr {
+  /* margin-top: 50px !important; */
+  border-bottom: 1px solid lightgray;
+  /* padding: 50px !important; */
+}
+
+.info-image {
+  width: 16px;
+}
+
+.w-60 {
+  width: 60%;
+  text-align: start !important;
+}
+
+.table-footer {
+  font-size: 10px;
+  font-weight: 400;
+  text-align: start;
+}
+
+.extra-bottom-padding {
+  padding-bottom: 100px !important;
+}
+.plans-table > table thead .show-ad {
+  text-align: center;
+  border-bottom: 1px solid white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  background-color: #e8eaed;
+}
+.footer-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding-bottom: 100px;
+  flex-wrap: wrap;
+  /* border-bottom: 1px solid grey; */
+}
+.footer-title {
+  font-size: 12px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  height: 20px;
+}
+.footer-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  padding: 7px 32px 8px 0;
+}
+.social-media {
+  border-top: 1px solid gray;
+  width: 80%;
+}
+.social {
+  display: flex;
+  gap: 20px;
+  margin: 50px 0;
+}
+.social-item {
+}
+
+.last-section {
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.last-section a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.44;
+}
+.plan-switch {
+  height: 180px;
+  display: flex;
+  width: 80%;
+  gap: 10px;
+  padding-left: 50px;
+}
+.base-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.base-plan .img-container {
+  width: 150px;
+  height: 70px;
+}
+.img-1 {
+  width: 50px !important;
+}
+.plan-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.switch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  width: 60px;
+  height: 30px;
+  background-color: gray;
+  border-radius: 15px;
+  position: relative;
+}
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  box-shadow: 1px 1px 5px 0px black;
+  cursor: pointer;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.popular-btn {
+  height: 25px;
+
+  padding: 7px 15px 5px;
+  background-color: #00ed82;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.popular-btn a {
+  font-size: 9px;
+  color: black;
+}
+.with-ads {
+  color: #bec0c2;
+}
+.with-ads strong {
+  color: white;
+}
+
+.subscription-btn {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 28px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.gray-bg {
+  background-color: #272c34;
+}
+.fix-position {
+  position: sticky;
 }
