@@ -1,5 +1,55 @@
 /* normalize CSS */
-@import url(https://db.onlinewebfonts.com/c/105007d99d9df64c50cc24d696d79555?family=Graphik+Web+Regular+Regular);
+@font-face {
+  font-family: Graphik;
+  src: url(../assets/fonts/Graphik-Extralight-Web.woff) format("woff");
+  font-weight: 100;
+}
+@font-face {
+  font-family: Graphik;
+  src: url(../assets/fonts/Graphik-Regular-Web.woff) format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Graphik;
+
+  src: url(../assets/fonts/Graphik-Medium-Web.woff) format("woff");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: Graphik;
+  src: url(../assets/fonts/Graphik-Semibold-Web.woff) format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: Graphik;
+  src: url(../assets/fonts/Graphik-Bold-Web.woff) format("woff");
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: Graphik Web;
+  src: url(../assets/fonts/Graphik-Regular-Web.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: Graphik Web;
+  src: url(../assets/fonts/Graphik-Medium-Web.woff) format("woff");
+  font-weight: 500;
+  ascent-override: 90%;
+  font-style: normal;
+}
+@font-face {
+  font-family: Graphik Web;
+  src: url(../assets/fonts/Graphik-Semibold-Web.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +61,7 @@ a {
 }
 body {
   /* font-family: "Graphik Web Regular Regular"; */
-  font-family: monospace;
+  font-family: "Graphik Web";
 }
 img {
   width: 100%;
@@ -117,6 +167,16 @@ z-index: 0;
   width: 70%;
   height: 60px;
 }
+.logo {
+  /* height: 100%; */
+  height: 74px;
+  width: 61px;
+}
+.logo img {
+  /* object-fit: cover; */
+  width: 100%;
+  height: 100%;
+}
 .item-price {
   font-size: 24px;
   font-weight: 500;
@@ -207,4 +267,200 @@ z-index: 0;
   color: #040405;
   border-color: #a5b8b0;
   /* transition: none; */
+}
+
+.tv-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 88px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #0b0c0f;
+}
+.tv-sub-title {
+  font-family: "Graphik Web", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}
+.tv-title {
+  font-family: "Graphik Web", sans-serif;
+  font-size: 48px;
+  letter-spacing: -0.5px;
+
+  font-weight: 600;
+  line-height: 1.25;
+  color: white;
+  margin: 16px 0 10px;
+}
+
+.tv-description {
+  font-size: 16px;
+  color: #f0f8ff;
+  width: 54%;
+  line-height: 1.36;
+  text-align: center;
+  font-weight: 400;
+    margin-bottom: 50px;
+
+}
+.cards-container {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+    
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* flex-direction: row; */
+  gap: 20px;
+  justify-content: center;
+  /* flex: auto; */
+}
+
+.card-item {
+  width: 295px;
+  flex-grow: 1;
+  /* flex: auto; */
+  /* flex-grow: 1/3; */
+  /* flex-shrink: 1; */
+  /* width: 100%; */
+  height: 100%;
+  border: 4px solid rgba(100, 53, 53, 0);
+  border-radius: 10px;
+  transition: all 300ms ease-in-out;
+}
+.card-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  padding: 5px;
+  border-radius: 10px;
+}
+.card-item-image img {
+  border-radius: 10px;
+}
+.card-text {
+  position: absolute;
+  top: 25px;
+  z-index: 99;
+  left: 25px;
+}
+.card-title,
+.card-sub-title {
+  color: white;
+  font-size: 12px;
+  line-height: 1.44;
+
+    font-weight: 500;
+}
+.card-sub-title{
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease-in-out;
+  padding: 0px;
+  z-index: 99;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(
+    293.18deg,
+    rgba(0, 0, 0, 0.5) 4.58%,
+    transparent 69.61%
+  ),
+  -webkit-linear-gradient(65.5deg, rgba(0, 0, 0, 0.5) 4.71%, transparent
+        71.49%);
+  transition: all 300ms ease-in-out;
+}
+.card-item-image:hover .card-overlay {
+  /* background-color: #1515ab4d; */
+  background: -webkit-linear-gradient(
+      293.18deg,
+      rgba(0, 0, 0, 0.9) 4.58%,
+      transparent 69.61%
+    ),
+    -webkit-linear-gradient(65.5deg, rgba(0, 0, 0, 0.4) 4.71%, transparent
+          71.49%);
+  /* border: 10px solid white; */
+}
+
+.card-item:hover {
+  border: 4px solid #797d84;
+  border-radius: 15px;
+
+}
+
+.add-on{
+    position:absolute;
+    /* bottom: -10px; */
+    margin-top: 10px;
+    font-family: "Graphik Web",sans-serif;
+    font-size: 10px;
+    line-height: 1.46;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: #ffffff99
+    ;
+
+}
+
+
+.hulu-ads{
+    font-size: 10px;
+    font-weight: 400;
+        margin: 0 25%;
+        color: #ffffff99;
+        text-align: center;
+        
+
+}
+.hulu-ads span a{
+    text-decoration: underline;
+    color: #ffffff99;
+}
+.view-channels{
+    margin-top: 16px;
+
+}
+.view-channels a{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    text-decoration: underline;
+    color: white;
+
+}
+.get-hulu-btn{
+    background-color: #00ed82;
+    padding: 16px 50px;
+    font-weight: 600;
+    border-radius: 5px;
+    /* background-color: transparent; */
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 300ms ease-in-out;
+}
+.get-hulu-btn:hover{
+    background-color: #1ce78390;
+}
+.margin-smaller{
+    margin-bottom: 30px !important;
+    /* border: 2px solid white; */
 }
