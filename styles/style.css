@@ -27,6 +27,16 @@
   box-sizing: border-box;
   /* font-size: 100%; */
 }
+:root{
+  --primary-color:#00ed82;
+  --secondary-color:white;
+  --primary-bg:#0b0c0f;
+  --secondary-bg:black;
+  --primary-fz:48px;
+  --secondary-fz:16px;
+  --small-fz:12px;
+  --xs-small-fz:10px;
+}
 a {
   text-decoration: none;
   color: #040405;
@@ -87,7 +97,7 @@ img {
 .log-in-btn a:hover {
   background-color: #323843;
   border-radius: 8px;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .hero-wrapper {
@@ -102,13 +112,13 @@ img {
 }
 
 .green-text {
-  color: #00ed82;
+  color: var(--primary-color);
 }
 .green-bg {
-  background-color: #00ed82;
+  background-color: var(--primary-color);
 }
 .hero-section {
-  color: white;
+  color: var(--secondary-color);
   width: 45%;
   height: 40vh;
 
@@ -193,12 +203,12 @@ img {
   font-size: 14px;
 }
 .hero-sign-up a {
-  font-size: 16px;
+font-size:var( --secondary-fz);
   font-weight: 400;
 }
 .hero-terms a,
 .hero-sign-up a {
-  color: white;
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 
@@ -214,7 +224,7 @@ img {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.32;
-  color: white;
+  color: var(--secondary-color);
   margin-top: 30px;
 }
 .call-to-action a {
@@ -224,9 +234,9 @@ img {
   padding-right: 22px;
   text-align: center;
   border-radius: 4px;
-  border: 2px solid white;
+  border: 2px solid var(--secondary-color);
   background-color: transparent;
-  color: white;
+  color: var(--secondary-color);
   font-weight: 600;
   font-size: 14px;
   margin-top: 20px;
@@ -258,17 +268,17 @@ img {
 }
 .tv-title {
   font-family: "Graphik Web", sans-serif;
-  font-size: 48px;
+  font-size: var(--primary-fz);
   letter-spacing: -0.5px;
 
   font-weight: 600;
   line-height: 1.25;
-  color: white;
+  color: var(--secondary-color);
   margin: 16px 0 10px;
 }
 
 .tv-description {
-  font-size: 16px;
+font-size:var( --secondary-fz);
   color: #f0f8ff;
   width: 54%;
   line-height: 1.36;
@@ -322,7 +332,7 @@ img {
 }
 .card-title,
 .card-sub-title {
-  color: white;
+  color: var(--secondary-color);
   font-size: 12px;
   line-height: 1.44;
 
@@ -374,7 +384,7 @@ img {
   /* bottom: -10px; */
   margin-top: 10px;
   font-family: "Graphik Web", sans-serif;
-  font-size: 10px;
+font-size:var( --xs-small-fz);
   line-height: 1.46;
   letter-spacing: 0;
   font-weight: 400;
@@ -382,7 +392,7 @@ img {
 }
 
 .hulu-ads {
-  font-size: 10px;
+font-size:var( --xs-small-fz);
   font-weight: 400;
   margin: 0 25%;
   color: #ffffff99;
@@ -396,14 +406,14 @@ img {
   margin-top: 16px;
 }
 .view-channels a {
-  font-size: 16px;
+font-size:var( --secondary-fz);
   font-weight: 600;
   letter-spacing: 0.6px;
   text-decoration: underline;
-  color: white;
+  color: var(--secondary-color);
 }
 .get-hulu-btn {
-  background-color: #00ed82;
+  background-color: var(--primary-color);
   padding: 16px 50px;
   font-weight: 600;
   border-radius: 5px;
@@ -440,7 +450,7 @@ img {
 .live-sports-wrapper {
   width: 70%;
   height: 55vh;
-  /* border: 1px solid White; */
+  /* border: 1px solid var(--secondary-color); */
   padding: 50px;
   padding-top: 20px;
 }
@@ -467,8 +477,8 @@ img {
   color: #ffffff99;
 }
 .tab-active {
-  border-bottom: 4px solid white;
-  color: white !important;
+  border-bottom: 4px solid var(--secondary-color);
+  color: var(--secondary-color) !important;
 }
 .tab-active:hover {
   color: #ffffff99 !important;
@@ -476,18 +486,18 @@ img {
 
 .sports-title,
 .sports-description {
-  color: white;
+  color: var(--secondary-color);
   width: 50%;
 }
 .sports-title {
-  font-size: 48px;
+  font-size: var(--primary-fz);
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: -0.5px;
   margin-top: 25px;
 }
 .sports-description {
-  font-size: 16px;
+font-size:var( --secondary-fz);
   line-height: 1.36;
   letter-spacing: 0;
   font-weight: 400px;
@@ -502,7 +512,7 @@ img {
 .partner-logo {
   width: 55px;
   height: 55px;
-  background-color: white;
+  background-color: var(--secondary-color);
   border-radius: 50%;
   margin-right: 30px;
   /* border: none; */
@@ -527,12 +537,12 @@ img {
 
 .plan-title {
   font-family: "Graphik Web", sans-serif;
-  font-size: 48px;
+  font-size: var(--primary-fz);
   letter-spacing: -0.5px;
 
   font-weight: 600;
   line-height: 1.25;
-  color: white;
+  color: var(--secondary-color);
   margin: 16px 0 10px;
 }
 
@@ -565,11 +575,11 @@ img {
 .plans-table table tr th {
   text-align: center;
   padding: 20px 0;
-  color: white;
+  color: var(--secondary-color);
   align-content: center;
   align-self: center;
   margin: auto 0;
-  /* border: 1px solid white; */
+  /* border: 1px solid var(--secondary-color); */
   position: relative;
 }
 
@@ -614,7 +624,7 @@ img {
 }
 
 .table-footer {
-  font-size: 10px;
+font-size:var( --xs-small-fz);
   font-weight: 400;
   text-align: start;
 }
@@ -624,7 +634,7 @@ img {
 }
 .plans-table > table thead .show-ad {
   text-align: center;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--secondary-color);
   width: 100%;
   cursor: pointer;
 }
@@ -724,7 +734,7 @@ img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--secondary-color);
   position: absolute;
   left: 0;
   top: 50%;
@@ -742,7 +752,7 @@ img {
   height: 25px;
 
   padding: 7px 15px 5px;
-  background-color: #00ed82;
+  background-color: var(--primary-color);
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -757,11 +767,11 @@ img {
   color: #bec0c2;
 }
 .with-ads strong {
-  color: white;
+  color: var(--secondary-color);
 }
 
 .subscription-btn {
-  background-color: white;
+  background-color: var(--secondary-color);
   color: black;
   font-size: 14px;
   font-weight: 600;
@@ -777,4 +787,204 @@ img {
 }
 .fix-position {
   position: sticky;
+}
+.about-link{
+  display: flex;flex-direction: row;align-items: center;justify-content: center;gap: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navbar{
+    padding: 0 5%;
+  }
+  .hero-wrapper .hero-section {
+    width: 90% !important;
+  }
+
+  .item-price{
+    font-size: 18px;
+  }
+
+  .tv-title, .plan-title{
+    font-size: calc(var(--primary-fz)/2);
+  }
+  .tv-section{
+    /* padding-left: 0; 
+    padding-right: 0; */
+    text-align: center;
+  }
+  .tv-description, .plan-description{
+    width: 95%;
+  }
+  /* .cards{
+    flex-wrap: nowrap;
+  }
+
+  .card-item{
+    flex-shrink: 0.1;
+    flex-grow: 2;
+    height: 100px;
+  } */
+
+
+  .hulu-ads{
+    margin: 0 5%;
+  }
+  .view-channels a{
+    font-size: 12px;
+  }
+
+  .container-live-sports{
+    display: block;
+    height: 100vh;
+    background-image: linear-gradient( 90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72% ), url(../assets/second-section-mobile-bg.png);
+    /* background-position-y:top ; */
+    background-position: center;
+
+  }
+  .live-sports-wrapper{
+    position: relative;
+    width: 100%;
+
+  }
+  .sports-title, .sports-description{
+    width: 100%;
+    text-align: center;
+  }
+  .sports-menu{
+    /* position: absolute; */
+    /* top: 20px; */
+  }
+
+  .partners-logos{
+    justify-content: space-between;
+    margin-bottom:20px
+  }
+  .partner-logo{
+    margin-right: 0;
+  }
+  .container-live-sports .hulu-ads{
+    text-align: center;
+   
+  }
+
+ .plans-table{
+  width: 95%;
+ }
+ 
+ thead tr:nth-child(1){
+  border-top: 1px oild lightgray;
+ }
+
+tr{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+thead tr th:nth-child(1){
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+}
+thead tr th:nth-child(2){
+  background-color: var(--primary-bg);
+
+  flex: 1 1 50%;
+  border-right: 1px solid lightgray;;
+}
+thead tr th:nth-child(3){
+  flex: 1 1 50%;
+
+}
+
+tbody tr td:nth-child(1){
+  flex: 1 1 100%;
+  width: 100%;
+  margin:0 auto ;
+  text-align: center !important;
+  
+ 
+}
+tbody tr td:nth-child(2){
+  background-color: var(--primary-bg);
+  flex: 1 1 50%;
+ 
+}
+tbody tr td:nth-child(3){
+  flex: 1 1 50%;
+  
+
+}
+
+tr .extra-bottom-padding:nth-child(2), tr .extra-bottom-padding:nth-child(3),tr .extra-bottom-padding:nth-child(1){
+  padding: 0 !important;
+
+}
+
+.plan-switch{padding-left: 0; justify-content: center;}
+
+
+
+
+.sports-menu ul li{
+  font-weight: bold;
+  /* word-wrap:break-word; */
+  margin-right: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* tr{
+
+  display: table;
+ }
+ thead tr th:nth-child(1){
+  display: table-header-group;
+  background-color: var(--primary-bg);
+
+  
+}
+thead tr th:nth-child(2){
+  display: table-cell;
+  background-color: var(--primary-bg);
+}
+thead tr th:nth-child(3){
+  display: table-cell;
+  background-color: red;
+}
+
+.middle{
+  width: 50%;
+}*/
+.footer-wrapper{
+  flex-direction: column;
+}
+.last-section{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.about-link{
+  justify-content: start;
+}
+
+
 }
